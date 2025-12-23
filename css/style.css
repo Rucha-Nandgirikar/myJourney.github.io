@@ -1463,6 +1463,11 @@ a:focus {
     font-weight: 600;
 }
 
+.blog .blog-text h3 {
+    font-size: 25px;
+    font-weight: 600;
+}
+
 .blog .blog-text p {
     margin-bottom: 10px;
 }
