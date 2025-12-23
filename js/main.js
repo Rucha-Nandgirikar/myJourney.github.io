@@ -104,6 +104,20 @@
         $(this).addClass('filter-active');
         portfolioIsotope.isotope({filter: $(this).data('filter')});
     });
+
+    // Projects (Project Details) filter
+    if ($('.projects-container').length) {
+        var projectsIsotope = $('.projects-container').isotope({
+            itemSelector: '.project-item',
+            layoutMode: 'fitRows'
+        });
+
+        $('#projects-filter li').on('click', function () {
+            $("#projects-filter li").removeClass('filter-active');
+            $(this).addClass('filter-active');
+            projectsIsotope.isotope({filter: $(this).data('filter')});
+        });
+    }
     
 })(jQuery);
 

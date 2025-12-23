@@ -850,6 +850,39 @@ a:focus {
     border-color: darkslateblue;
 }
 
+.blog #projects-filter {
+    padding: 0;
+    margin: -15px 0 25px 0;
+    list-style: none;
+    font-size: 0;
+    text-align: center;
+}
+
+.blog #projects-filter li {
+    cursor: pointer;
+    display: inline-block;
+    margin: 5px;
+    padding: 6px 12px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #ffffff;
+    background: darkslateblue;
+    border: 2px solid transparent;
+    border-radius: 0;
+    box-shadow: inset 0 0 0 50px darkslateblue;
+    transition: ease-out 0.3s;
+    -webkit-transition: ease-out 0.3s;
+    -moz-transition: ease-out 0.3s;
+}
+
+.blog #projects-filter li:hover,
+.blog #projects-filter li.filter-active {
+    color: darkslateblue;
+    background: transparent;
+    box-shadow: inset 0 0 0 0 darkslateblue;
+    border-color: darkslateblue;
+}
+
 .portfolio .portfolio-item {
     position: relative;
 }
